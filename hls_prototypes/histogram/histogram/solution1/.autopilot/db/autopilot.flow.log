@@ -1,0 +1,214 @@
+INFO-FLOW: Workspace /afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/histogram/histogram/solution1 opened at Tue Dec 13 16:57:39 PST 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xczu9eg-ffvb1156-2-e 
+Execute       create_platform xczu9eg-ffvb1156-2-e -board  
+DBG:HLSDevice: Trying to load device library: /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vivado/2021.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+Command       create_platform done; 1.14 sec.
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/util.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.23 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.24 sec.
+Execute   set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+Execute     create_platform xczu9eg-ffvb1156-2-e -board  
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute     source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/maxi.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/util.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   csim_design -clean -quiet 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 3.11 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.05 seconds. CPU system time: 0.39 seconds. Elapsed time: 3.11 seconds; current allocated memory: 317.161 MB.
+Command ap_source done; error code: 1; 4.48 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/histogram/histogram/solution1 opened at Tue Dec 13 16:58:09 PST 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xczu9eg-ffvb1156-2-e 
+Execute       create_platform xczu9eg-ffvb1156-2-e -board  
+DBG:HLSDevice: Trying to load device library: /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vivado/2021.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+Command       create_platform done; 1.12 sec.
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/util.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.22 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.23 sec.
+Execute   set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+Execute     create_platform xczu9eg-ffvb1156-2-e -board  
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute     source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/maxi.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/util.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   csim_design -clean -quiet 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 13.86 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.23 seconds. CPU system time: 1.05 seconds. Elapsed time: 13.86 seconds; current allocated memory: 317.176 MB.
+Command ap_source done; 15.21 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/histogram/histogram/solution1 opened at Tue Dec 13 16:59:01 PST 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xczu9eg-ffvb1156-2-e 
+Execute       create_platform xczu9eg-ffvb1156-2-e -board  
+DBG:HLSDevice: Trying to load device library: /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vivado/2021.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+Command       create_platform done; 1.14 sec.
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/util.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.23 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.24 sec.
+Execute   set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+Execute     create_platform xczu9eg-ffvb1156-2-e -board  
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute     source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/maxi.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/util.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.11 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   csim_design -clean -quiet 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 13.81 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.19 seconds. CPU system time: 1.04 seconds. Elapsed time: 13.81 seconds; current allocated memory: 317.177 MB.
+Command ap_source done; 15.17 sec.
+Execute cleanup_all 

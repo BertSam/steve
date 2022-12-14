@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="hist.c" path="/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/histogram/hist.c"/>
+  </source>
+  <testbench>
+    <originFiles name="cpp_hist_ref.dat" path="/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/cpp_hist_ref.dat"/>
+    <originFiles name="hist_test.c" path="/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/histogram/hist_test.c"/>
+    <originFiles name="q_ref.dat" path="/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/q_ref.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
