@@ -1,0 +1,54 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vitis_HLS/2021.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'berthie' on host 'rdsrv310' (Linux_x86_64 version 5.15.0-56-generic) on Tue Dec 13 16:55:14 PST 2022
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/quantizer'
+Sourcing Tcl script '/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/quantizer/quantizer/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project quantizer 
+INFO: [HLS 200-10] Opening project '/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/quantizer/quantizer'.
+INFO: [HLS 200-1510] Running: set_top q_sample 
+INFO: [HLS 200-1510] Running: add_files q_sample.c 
+INFO: [HLS 200-10] Adding design file 'q_sample.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../q_lvls.dat 
+INFO: [HLS 200-10] Adding test bench file '../q_lvls.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../q_ref.dat 
+INFO: [HLS 200-10] Adding test bench file '../q_ref.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb q_sample_test.c 
+INFO: [HLS 200-10] Adding test bench file 'q_sample_test.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../raw.dat 
+INFO: [HLS 200-10] Adding test bench file '../raw.dat' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/quantizer/quantizer/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu9eg-ffvb1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../q_sample_test.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vivado/2021.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'berthie' on host 'rdsrv310' (Linux_x86_64 version 5.15.0-56-generic) on Tue Dec 13 16:55:17 PST 2022
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/quantizer/quantizer/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_berthie/1634171670979317866240
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../q_sample.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/afs/slac.stanford.edu/g/reseng/vol34/xilinx/2021.1/Vivado/2021.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'berthie' on host 'rdsrv310' (Linux_x86_64 version 5.15.0-56-generic) on Tue Dec 13 16:55:24 PST 2022
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/quantizer/quantizer/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_berthie/1634751670979324587749
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Comparing against output data 
+*******************************************
+PASS: The output matches the ref output!
+*******************************************
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.19 seconds. CPU system time: 1.02 seconds. Elapsed time: 13.85 seconds; current allocated memory: 317.217 MB.

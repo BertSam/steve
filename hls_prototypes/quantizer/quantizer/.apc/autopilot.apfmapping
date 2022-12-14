@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="q_sample.c" path="/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/quantizer/q_sample.c"/>
+  </source>
+  <testbench>
+    <originFiles name="q_lvls.dat" path="/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/q_lvls.dat"/>
+    <originFiles name="q_ref.dat" path="/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/q_ref.dat"/>
+    <originFiles name="q_sample_test.c" path="/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/quantizer/q_sample_test.c"/>
+    <originFiles name="raw.dat" path="/afs/slac.stanford.edu/u/gu/berthie/vivado_prj/final/raw.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
